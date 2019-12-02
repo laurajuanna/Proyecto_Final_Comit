@@ -1,10 +1,10 @@
 # Proyecto Final Comunidad It - En construcción -
-![Screenshot del Index](img/screenshot.jpg)
-![Screenshot de Reserva](img/screenshot2.jpg)
-![Screenshot responsive](img/screenshot3.jpeg)
 
 Creado con HTML, CSS, Javascript + Firebase database.
 
+![Screenshot del Index](img/screenshot.jpg)
+![Screenshot de Reserva](img/screenshot2.jpg)
+![Screenshot responsive](img/screenshot3.jpeg)
 ## [Click acá para acceder al sitio](https://stoic-brahmagupta-12513c.netlify.com) ##
 
 ### Esta totalmente "en construcción".

@@ -1,7 +1,7 @@
 # Proyecto Final Comunidad It - En construcción -
 ![Screenshot del Index](img/screenshot.jpg)
 ![Screenshot de Reserva](img/screenshot2.jpg)
-![Screenshot responsive](img/screenshot3.jpg)
+![Screenshot responsive](img/screenshot3.jpeg)
 
 Creado con HTML, CSS, Javascript + Firebase database.
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./icon/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos-administrar.css">
+    <title>App Combis</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+</head>
+<body>
+    <div class="general">
+        <div class="main">
+            <div class="nav">
+                <div class="img">
+                    <img class="img-nav" src="/img/logo-sm.png">
+                </div>
+                <div id="toggle-menu" onclick="desplegar()"> <!-- Solo agregué el onclick-->
+                    <i class="icon-menu" id="menu"></i>
+                </div>
+                <ul class="menu" id="desplegable" style="display: none;"><!--Agregué el ID y el display none-->
+                    <li></li>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/reserva.html">RESERVAS</a> </li>
+                    <li><a href="/administrar.html">ADMINISTRAR</a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="contenido">                
+                <div class="texto">
+                    <h1>VIAJES</h1>
+                    <br>
+                    <div class="form">
+                        <ul class="lista">
+                            <li>Ingrese ID de Conductor</li>
+                            <li><input type="number"></li>
+                            <li>Ingrese Nombre y Apellido</li>
+                            <li><input type="text"></li>
+                        </ul>
+                        <div class="botones">
+                            <a href="#" class="button" onclick="buscarConductor()">Buscar Viajes</a>
+                            <a href="#" class="button">Buscar Pasajeros</a>
+                        </div>
+                        <div class="tabla">
+                            <table id="busqueda">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="redes"><a href="https://www.facebook.com/VANS-DEL-SUR-120777174759486">Seguinos en Facebook <i class="icon-facebook" id="facebook"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+    <script src="script-onclick.js"></script>
+</body>
+</html>

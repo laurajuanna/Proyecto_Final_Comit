@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./icon/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos-reserva.css">
+    <title>App Combis</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+</head>
+<body onload="contarId()"> <!-- Hace la cuenta de cuántos Items hay en la BD de Firebase para que cargue + rápido-->
+    <div class="general">
+        <div class="main">
+            <div class="nav">
+                <div class="img">
+                    <img class="img-nav" src="/img/logo-sm.png">
+                </div>
+                <div id="toggle-menu">
+                    <i class="icon-menu" id="menu"></i>
+                </div>
+                <ul class="menu">
+                    <li></li>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/reserva.html">RESERVAS</a> </li>
+                    <li><a href="/administrar.html">ADMINISTRAR</a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="contenido">                
+                <div class="texto">
+                    <h1>RESERVAS</h1>
+                    <div class="form">
+                        <div class="reserva">
+                            <ul class="formulario">
+                                <li>Nombre</li>
+                                <li><input type="text" id="nombre_pasajero"></li>
+                                <li>Telefono</li>
+                                <li><input type="tel" id="telefono"></li>
+                                <li>Fecha</li>
+                                <li><input type="date" id="fecha"></li>
+                                <li>Origen</li>
+                                <li>
+                                    <select id="origen">
+                                            <option disabled selected>Seleccionar..</option>
+                                            <option value="Berazategui">Berazategui</option>
+                                            <option value="Quilmes">Quilmes</option>
+                                            <option value="Bernal">Bernal</option>
+                                            <option value="Puerto Madero">Puerto Madero</option>
+                                            <option value="Microcentro">Microcentro</option>
+                                    </select>
+                                </li>
+                                <li>Destino</li>
+                                <li>
+                                    <select id="destino">
+                                            <option disabled selected>Seleccionar..</option>
+                                            <option value="Microcentro">Microcentro</option>
+                                            <option value="Puerto Madero">Puerto Madero</option>
+                                            <option value="Bernal">Bernal</option>
+                                            <option value="Quilmes">Quilmes</option>
+                                            <option value="Berazategui">Berazategui</option>
+                                    </select>
+                                </li>
+                                <li>Horario</li>
+                                <li>
+                                    <select id="hora">
+                                        <option disabled selected>Seleccionar..</option>
+                                        <option value="6:00">6.00</option>
+                                        <option value="6:15">6.15</option>
+                                        <option value="6:30">6.30</option>
+                                        <option value="6:45">6.45</option>
+                                        <option value="7:00">7.00</option>
+                                        <option value="7:15">7.15</option>
+                                        <option value="7:30">7.30</option>
+                                        <option value="7:45">7.45</option>
+                                        <option value="8:00">8.00</option>
+                                        <option value="8:15">8.15</option>
+                                        <option value="8:30">8.30</option>
+                                        <option value="8:45">8.45</option>
+                                        <option value="9:00">9.00</option>
+                                        <option value="9:30">9.30</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    Asiento Seleccionado
+                                </li>
+                                <li id="asiento_elegido">
+                                    <input type="text" id="nroElegido" disabled value="Seleccionar..">
+                                </li>
+                            </ul>
+                            <br>
+                            <div class="respuesta">
+                                <div class="formulario">
+                                    <div class="asientos">
+                                        <div class="grilla">
+                                            <div id="conductor"><span class="vacio"></span></div>
+                                            <button class="nro_asiento" id="a1" value="1" onclick="dar_asiento(id,value)">1</button>
+                                            <button class="nro_asiento" id="a2" value="2" onclick="dar_asiento(id, value)">2</button>
+                                            <div id="pasillo"></div>
+                                            <button class="nro_asiento" id="a3" value="3" onclick="dar_asiento(id, value)">3</button>
+                                            <button class="nro_asiento" id="a4" value="4" onclick="dar_asiento(id, value)">4</button>
+                                            <button class="nro_asiento" id="a5" value="5" onclick="dar_asiento(id, value)">5</button>
+                                            <button class="nro_asiento" id="a6" value="6" onclick="dar_asiento(id, value)">6</button>
+                                            <button class="nro_asiento" id="a7" value="7" onclick="dar_asiento(id, value)">7</button>
+                                            <button class="nro_asiento" id="a8" value="8" onclick="dar_asiento(id, value)">8</button>
+                                            <button class="nro_asiento" id="a9" value="9" onclick="dar_asiento(id, value)">9</button>
+                                            <button class="nro_asiento" id="a10" value="10" onclick="dar_asiento(id, value)">10</button>
+                                            <button class="nro_asiento" id="a11" value="11" onclick="dar_asiento(id, value)">11</button>
+                                            <button class="nro_asiento" id="a12" value="12" onclick="dar_asiento(id, value)">12</button>
+                                            <button class="nro_asiento" id="a13" value="13" onclick="dar_asiento(id, value)">13</button>
+                                            <button class="nro_asiento" id="a14" value="14" onclick="dar_asiento(id, value)">14</button>
+                                            <button class="nro_asiento" id="a15" value="15" onclick="dar_asiento(id, value)">15</button>
+                                            <button class="nro_asiento" id="a16" value="16" onclick="dar_asiento(id, value)">16</button>
+                                            <button class="nro_asiento" id="a17" value="17" onclick="dar_asiento(id, value)">17</button>
+                                            <button class="nro_asiento" id="a18" value="18" onclick="dar_asiento(id, value)">18</button>
+                                            <button class="nro_asiento" id="a19" value="19" onclick="dar_asiento(id, value)">19</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" onclick="insertarDatos()">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="redes"><a href="https://www.facebook.com/VANS-DEL-SUR-120777174759486">Seguinos en Facebook <i class="icon-facebook" id="facebook"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

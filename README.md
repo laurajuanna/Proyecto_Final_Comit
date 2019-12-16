@@ -17,8 +17,12 @@
 
 # https://gestionvans.herokuapp.com/
 
-## Mejoras a realizar:
+## Datos de ingreso
+- Usuario: invitado@atos.com
+- Contraseña: 1234
 
+## Mejoras a realizar:
 - Corregir la BD
+- Agregar Login (!important)
 - Mejorar el responsive.
 - Reservas descargables en PDF (usuario/conductor)

@@ -1,0 +1,154 @@
+body {
+    background: none;
+}
+.contenedor {
+    height: 100vh;
+    padding: 0;
+}
+
+.bajada {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/img/terminal-foto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h2 {
+    font-size: 2.1rem;
+    color: whitesmoke;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+p {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    text-align: justify;
+    margin-bottom: 6rem;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 15vh;
+    width: 100%;
+    /*background-color: cadetblue;*/
+}
+
+.margen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.603);
+}
+
+.margen p {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.3rem;
+    color: rgb(61, 61, 61);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.icon-redes {
+    width: 2.3rem;
+}
+
+.filtro {
+    filter: contrast(0.2);
+}
+
+a img:hover {
+    border: 2px solid steelblue;
+    border-radius: 50%;
+}
+
+
+
+/* Mediaquerys para pantalla grande */
+@media screen and (min-width:768px){
+    body {
+        background: none;
+    }
+
+    .contenedor {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .index {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .bajada {
+        background-image: url(/img/terminal.jpg);
+        background-position-y: center;
+        background-attachment: fixed;
+        height: 50vh;
+    }
+
+    .texto {
+        width: 50vw;
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        height: 15vh;
+        width: 100%;
+    }
+    
+    .redes .redes-enlaces {
+        width: 50vw;
+        height: 10vh;
+        /*background-color: red;*/
+        margin-right: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+    .margen {
+        width: 22vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*background-color: steelblue;*/
+    }
+    
+    .margen p {
+        font-size: small;
+    }
+    .icon-redes {
+        width: 2rem;
+    }
+
+}

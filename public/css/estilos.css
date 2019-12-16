@@ -1,0 +1,259 @@
+body {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    background: url('/img/terminal-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+.nav .img{
+    display: flex;
+    justify-content: center;
+}
+
+.img .img-nav{
+    width: 10rem;
+    height: auto;
+}
+
+.img .img-nav2 {
+    display: none;
+}
+
+#menu {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background: steelblue;
+    
+}
+
+.oculto {
+    display: none;
+}
+
+.aparecer {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu li{
+    flex: auto;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+#menu li :last-child{
+    border: none;
+}
+
+#menu li .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.icono {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#menu a {
+    color: #eee;
+    text-decoration: none;
+    line-height: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    /*font-size: .8em;*/
+    text-align: center;
+}
+
+#toggle-menu{
+    background: steelblue;
+    opacity: 0.8;
+    padding: 0.3rem 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+#toggle-menu:hover{
+    background: rgba(70, 130, 180, 0.6);
+}
+
+
+#barras {
+    width: 30px;
+}
+
+#menu a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.marco {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.829);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    /*padding: 2rem;*/
+}
+
+.mensaje {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje2 {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.mensaje-reserva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-right: 1rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    color: steelblue;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    color: steelblue;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+button{
+    width: 14vw auto;
+    height: 8vh;
+    border-radius: 6px;
+    border: 0;
+    background: #2d66d3;
+    font-weight: bolder;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.otro {
+    background: rgb(12, 179, 12);
+    width: 10vw auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(12, 179, 12);
+}
+
+.correcto{
+    color: rgb(61, 61, 61);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+fieldset {
+    display: flex;
+    border-style: none;
+}
+
+
+/* Mediaquerys para pantalla grande */
+@media screen and (min-width:768px){
+    body {
+        background: url('/img/terminal.jpg');
+        max-width: 100%;
+        max-height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;        
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-wrap: wrap;
+    }
+
+    .contenedor {
+        height: 100vh;
+        background-attachment: fixed;
+        margin: 0;
+    }
+
+    .img-nav {
+        display: none;
+    }
+
+    .img-nav2 {
+        display: block !important;
+        width: 10rem;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu a {
+            font-size: .8em;
+        }
+
+    #toggle-menu {
+        display: none;
+    }
+
+    
+}

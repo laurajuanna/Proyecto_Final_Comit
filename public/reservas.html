@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos-reserva.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <title>Reservas</title>
+</head>
+<body onload="obtener_asientos_ocupados()">
+    <div class="marco">
+        <div class="contenedor reservas">
+            <div class="nav">
+                <div class="img">
+                    <img class="img-nav" src="/img/logo-sm.png">
+                    <img class="img-nav2" src="/img/logo-lg.png">
+                </div>
+                <div id="toggle-menu">
+                    <i class="icon-menu"><img src="./img/menu.png" id="barras" onclick="aparecer_menu()" alt="icono de menu"></i>
+                </div>
+                <ul id="menu" class="oculto">
+                    <li></li>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/reservas.html">RESERVAS</a></li>
+                    <li><a href="/administrar.html">INGRESAR</a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="titulo">
+                <h1>RESERVAS</h1>
+            </div>
+            <div class="bloque">
+                <div class="formulario">
+                    <form action="/api/asientos_reservados" method="POST">
+                        <div class="campos">
+                            <h3>INGRESE DATOS</h3>
+                            <fieldset>
+                                <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" required>
+                            </fieldset>
+                            <fieldset>
+                                <input type="number" name="telefono" id="telefono" placeholder="Ingrese telefono" required>
+                            </fieldset>
+                            <fieldset>
+                                <input type="date" name="fecha" id="fecha" placeholder="Elija fecha" required>
+                            </fieldset>
+                            <fieldset>
+                                <select name="origen" id="origen" required>
+                                    <option disabled selected>Elija origen..</option>
+                                    <option value="Quilmes">Quilmes</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <select name="destino" id="destino" required>
+                                    <option disabled selected>Elija destino..</option>
+                                    <option value="Microcentro">Microcentro</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <select id="horario" name="horario" required>
+                                    <option disabled selected>Elija horario..</option>
+                                    <option value="8:00">8:00</option>
+                                </select>
+                            </fieldset>
+                            <fieldset id="asiento_elegido">
+                                <input type="number" name="asiento" id="asiento" hidden required>
+                            </fieldset>
+                        </div>
+                        <div class="reser-asiento">
+                            <h3>Elija un asiento</h3>
+                            <div class="asientos">                                
+                                <div class="grilla" id="orden_asientos">
+                                    <div id="pasillo"></div>
+                                    <div id="conductor"><span class="vacio"></span></div>
+                                    <button class="nro_asiento" id="a1" value="1" onclick="dar_asiento(id,value)">1</button>
+                                    <button class="nro_asiento" id="a2" value="2" onclick="dar_asiento(id, value)">2</button>                            
+                                    <button class="nro_asiento" id="a3" value="3" onclick="dar_asiento(id, value)">3</button>
+                                    <button class="nro_asiento" id="a4" value="4" onclick="dar_asiento(id, value)">4</button>
+                                    <button class="nro_asiento" id="a5" value="5" onclick="dar_asiento(id, value)">5</button>
+                                    <button class="nro_asiento" id="a6" value="6" onclick="dar_asiento(id, value)">6</button>
+                                    <button class="nro_asiento" id="a7" value="7" onclick="dar_asiento(id, value)">7</button>
+                                    <button class="nro_asiento" id="a8" value="8" onclick="dar_asiento(id, value)">8</button>
+                                    <button class="nro_asiento" id="a9" value="9" onclick="dar_asiento(id, value)">9</button>
+                                    <button class="nro_asiento" id="a10" value="10" onclick="dar_asiento(id, value)">10</button>
+                                    <button class="nro_asiento" id="a11" value="11" onclick="dar_asiento(id, value)">11</button>
+                                    <button class="nro_asiento" id="a12" value="12" onclick="dar_asiento(id, value)">12</button>
+                                    <button class="nro_asiento" id="a13" value="13" onclick="dar_asiento(id, value)">13</button>
+                                    <button class="nro_asiento" id="a14" value="14" onclick="dar_asiento(id, value)">14</button>
+                                    <button class="nro_asiento" id="a15" value="15" onclick="dar_asiento(id, value)">15</button>
+                                    <button class="nro_asiento" id="a16" value="16" onclick="dar_asiento(id, value)">16</button>
+                                    <button class="nro_asiento" id="a17" value="17" onclick="dar_asiento(id, value)">17</button>
+                                    <button class="nro_asiento" id="a18" value="18" onclick="dar_asiento(id, value)">18</button>
+                                    <button class="nro_asiento" id="a19" value="19" onclick="dar_asiento(id, value)">19</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boton_reserva">
+                            <button type="submit" class="otro">Reservar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/funciones.js"></script>
+</body>
+</html>

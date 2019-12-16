@@ -1,0 +1,173 @@
+.contenedor {
+    height: 100vh;
+    padding: 0;
+}
+.ampliar {
+    height: auto !important;
+}
+
+.perfiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: darkslategrey;
+}
+
+h2 {
+    color: steelblue;
+    margin: 10px 0;
+}
+
+.content_reserva {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.achicar {
+    height: 28vh;
+}
+
+.content2 {
+    background: rgba(255, 255, 255, 0.75);
+    width: -webkit-fill-available;
+    padding: 1rem;
+    /*margin-top: 1rem;
+    margin-bottom: 2rem;*/
+}
+
+.busqueda {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 8vh;
+    border-radius: 6px;
+    border: 0;
+    background: #2d66d3;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.busqueda button {
+    margin-bottom: 1.5rem;
+    /*height: 8vh;
+    margin: 0;
+    background-color: rgb(12, 179, 12);*/
+}
+
+fieldset {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+input {
+    padding: 4px;
+    border: 2px solid rgba(85,85,85, 0.5);
+    border-radius: 5px;
+    width: 14rem;
+    height: 1.5rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: rgb(85, 85, 85);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+.correcto {
+    color: rgb(61, 61, 61);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.mensaje-reserva {
+    width: 11rem;
+    align-items: left;
+}
+.mensaje2 {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 5px;
+    }
+
+    th, td {
+    padding: 8px;
+    }
+
+    tr {
+        background-color: #f2f2f2
+    }
+
+    th {
+    background-color: rgb(191, 191, 191);
+    color: rgb(85,85,85);
+    }
+
+    h3 {
+        color: rgb(104, 108, 123);
+        text-transform: none;
+    }
+
+/* Mediaquerys para pantalla grande */
+
+@media screen and (min-width:768px){
+    .content_reserva {
+        padding: 1rem;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .content1 {
+        order: 1;
+        width: 45vh;
+        height: 40vh;
+        margin-left: 2rem;
+        background-color: white;
+        border-radius: 0.8rem;
+        padding: 0.7rem;
+    }
+
+    .mensaje-reserva {
+        width: auto;
+        align-items: start;
+    }
+
+    .achicar {
+        height: 25vh;
+    }
+
+    .content2 {
+        width: 60vh;
+        padding: 0.7rem;
+        margin: 0;
+        border-radius: 0.8rem;
+    };
+}

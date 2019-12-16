@@ -13,8 +13,7 @@
 ### Mobile ###
 ![Screenshot de Mobile](https://github.com/laurajuanna/gestion_vans/blob/master/public/img/github/screenshot_04.jpg)
 
-## [Click acá para acceder al sitio](https://gestionvans.herokuapp.com/) ##
-
+## Click acá para acceder al sitio: ##
 # https://gestionvans.herokuapp.com/
 
 ## Datos de ingreso

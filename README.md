@@ -1,27 +1,24 @@
-# Proyecto Final Comunidad It - En construcción -
+# Proyecto Final para Comunidad It @ Atos
 
-Creado con HTML, CSS, Javascript + Firebase database.
+Creado con Node.JS, Express, MongoDB, Javascript, HTML & CSS.
+Base de datos hosteada en Mongo Atlas.
+Servidor hosteado en Heroku.
 
-![Screenshot del Index](img/screenshot.jpg)
-![Screenshot de Reserva](img/screenshot2.jpg)
-![Screenshot responsive](img/screenshot3.jpeg)
-## [Click acá para acceder al sitio](https://stoic-brahmagupta-12513c.netlify.com) ##
+### Index ###
+![Screenshot del Index](https://github.com/laurajuanna/gestion_vans/blob/master/public/img/github/screenshot_01.jpg)
+### Reservas ###
+![Screenshot de Reserva](https://github.com/laurajuanna/gestion_vans/blob/master/public/img/github/screenshot_02.jpg)
+### Ingresar ###
+![Screenshot de Ingresar](https://github.com/laurajuanna/gestion_vans/blob/master/public/img/github/screenshot_03.jpg)
+### Mobile ###
+![Screenshot de Mobile](https://github.com/laurajuanna/gestion_vans/blob/master/public/img/github/screenshot_04.jpg)
 
-### Esta totalmente "en construcción".
+## [Click acá para acceder al sitio](https://gestionvans.herokuapp.com/) ##
 
-Por favor,
-**__por el momento no prestes mucha atención a la legibilidad y órden del código__**,
-sobre todo en los .css Mi prioridad es la funcionalidad,
-más adelante voy a ordenarlo y hacerlo mas legible.
+### El proyecto sigue "en construcción".
 
 ## Mejoras a realizar:
 
-- Momentaneamente uso Jquery __sólo para el efecto del Menú__, pero debo cambiarlo por un onclick+transition.
-
-- Debo mejorar el responsive.
-
-- Se deben mostrar los asientos ocupados.
-
-- Agregarle un login para los conductores y que **solo ellos** accedan a la administración donde se muestre la lista de pasajeros por horario.
-
-- Usando Node.js + Express hacer un CRUD para gestionar la base de datos. (Quizás reemplazando firebase database y usando solo la función de login.
+- Corregir la BD
+- Mejorar el responsive.
+- Reservas descargables en PDF (usuario/conductor)

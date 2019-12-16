@@ -15,7 +15,7 @@
 
 ## [Click acá para acceder al sitio](https://gestionvans.herokuapp.com/) ##
 
-### El proyecto sigue "en construcción".
+### https://gestionvans.herokuapp.com/
 
 ## Mejoras a realizar:
 

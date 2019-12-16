@@ -1,8 +1,8 @@
 # Proyecto Final para Comunidad It @ Atos
 
-Creado con Node.JS, Express, MongoDB, Javascript, HTML & CSS.
-Base de datos hosteada en Mongo Atlas.
-Servidor hosteado en Heroku.
+- Creado con Node.JS, Express, MongoDB, Javascript, HTML & CSS.
+- Base de datos hosteada en Mongo Atlas.
+- Servidor hosteado en Heroku.
 
 ### Index ###
 ![Screenshot del Index](https://github.com/laurajuanna/gestion_vans/blob/master/public/img/github/screenshot_01.jpg)
